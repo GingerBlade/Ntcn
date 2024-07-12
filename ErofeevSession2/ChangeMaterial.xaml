@@ -1,0 +1,49 @@
+﻿<Window x:Class="ErofeevSession2.ChangeMaterial"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ErofeevSession2"
+        mc:Ignorable="d"
+        Title="ChangeMaterial" Height="450" Width="420">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition/>
+            <RowDefinition  Height="0.1*"/>
+        </Grid.RowDefinitions>
+        <StackPanel>
+            <Image/>
+            <Label Content="Изменение Материала"/>
+        </StackPanel>
+        <ScrollViewer Grid.Row="1">
+            <StackPanel>
+                <GroupBox Header="Имя Материала">
+                    <TextBox Name="text1"/>
+                </GroupBox>
+                <GroupBox Header="Тип Материала">
+                    <ComboBox Name="cmb" SelectionChanged="cmb_SelectionChanged"/>
+                </GroupBox>
+                <GroupBox Header="Количество на складе">
+                    <TextBox Name="text2"/>
+                </GroupBox>
+                <GroupBox Header="Еденица измерения">
+                    <TextBox Name="text3"/>
+                </GroupBox>
+                <GroupBox Header="Количество в упаковке">
+                    <TextBox Name="text4"/>
+                </GroupBox>
+                <GroupBox Header="Минемальное количество">
+                    <TextBox Name="text5"/>
+                </GroupBox>
+                <GroupBox Header="Стоимость за еденицу">
+                    <TextBox Name="text6"/>
+                </GroupBox>
+                <GroupBox Header="Подобное описание">
+                    <TextBox Name="text7" TextWrapping="Wrap" AcceptsReturn="True" Height="80"/>
+                </GroupBox>
+            </StackPanel>
+        </ScrollViewer>
+        <Button Grid.Row="2" Content="Сохранить" Width="100" Click="Button_Click"/>
+    </Grid>
+</Window>

@@ -1,0 +1,38 @@
+﻿<Application x:Class="ErofeevSession2.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:ErofeevSession2"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <Style x:Key="ms">
+        <Setter Property="TextBlock.FontFamily" Value="Segoe Print"/>
+        <Setter Property="TextBlock.FontSize" Value="14"/>
+        <Setter Property="FrameworkElement.HorizontalAlignment" Value="Center"/>
+            <Setter Property="FrameworkElement.VerticalAlignment" Value="Center"/>
+        </Style>
+
+        <Style TargetType="Button" BasedOn="{StaticResource ms}">
+            <Style.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Style.Resources>
+            <Setter Property="Background" Value="Aqua"/>
+        </Style>
+        <Style TargetType="TextBox" BasedOn="{StaticResource ms}">
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+        </Style>
+        <Style TargetType="ComboBox" BasedOn="{StaticResource ms}">
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+        </Style>
+        <Style TargetType="Label" BasedOn="{StaticResource ms}">
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+        <Style TargetType="TextBlock" BasedOn="{StaticResource ms}">
+        </Style>
+        <Style TargetType="GroupBox" BasedOn="{StaticResource ms}">
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+        </Style>
+    </Application.Resources>
+</Application>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f682bb48ca0a4e109447c9f965d96900" Name="Diagram1" ZoomLevel="81">
+        <EntityTypeShape EntityType="ErofeevUser14Model.Agent" Width="1.5" PointX="3" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ErofeevUser14Model.AgentPriorityHistory" Width="1.5" PointX="5.25" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ErofeevUser14Model.AgentType" Width="1.5" PointX="0.75" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ErofeevUser14Model.Material" Width="1.5" PointX="3" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ErofeevUser14Model.MaterialCountHistory" Width="1.5" PointX="5.25" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ErofeevUser14Model.MaterialSupplier" Width="1.5" PointX="8.25" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ErofeevUser14Model.MaterialType" Width="1.5" PointX="0.75" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ErofeevUser14Model.Product" Width="1.5" PointX="3" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ErofeevUser14Model.ProductCostHistory" Width="1.5" PointX="5.25" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ErofeevUser14Model.ProductMaterial" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ErofeevUser14Model.ProductSale" Width="1.5" PointX="5.25" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="ErofeevUser14Model.ProductType" Width="1.5" PointX="0.75" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ErofeevUser14Model.Shop" Width="1.5" PointX="5.25" PointY="19.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ErofeevUser14Model.Supplier" Width="1.5" PointX="6" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ErofeevUser14Model.sysdiagrams" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="ErofeevUser14Model.FK_Agent_AgentType" ManuallyRouted="false" />
+        <AssociationConnector Association="ErofeevUser14Model.FK_AgentPriorityHistory_Agent" ManuallyRouted="false" />
+        <AssociationConnector Association="ErofeevUser14Model.FK_ProductSale_Agent" ManuallyRouted="false" />
+        <AssociationConnector Association="ErofeevUser14Model.FK_Shop_Agent" ManuallyRouted="false" />
+        <AssociationConnector Association="ErofeevUser14Model.FK_Material_MaterialType" ManuallyRouted="false" />
+        <AssociationConnector Association="ErofeevUser14Model.FK_MaterialCountHistory_Material" ManuallyRouted="false" />
+        <AssociationConnector Association="ErofeevUser14Model.FK_MaterialSupplier_Material" ManuallyRouted="false" />
+        <AssociationConnector Association="ErofeevUser14Model.FK_ProductMaterial_Material" ManuallyRouted="false" />
+        <AssociationConnector Association="ErofeevUser14Model.FK_MaterialSupplier_Supplier" ManuallyRouted="false" />
+        <AssociationConnector Association="ErofeevUser14Model.FK_Product_ProductType" ManuallyRouted="false" />
+        <AssociationConnector Association="ErofeevUser14Model.FK_ProductCostHistory_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="ErofeevUser14Model.FK_ProductMaterial_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="ErofeevUser14Model.FK_ProductSale_Product" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
